@@ -32,6 +32,7 @@ public class Driver : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D other)
     {
+        // collision detector for boosts and bumps
         if (other.tag == "Booster")
         {
             moveSpeed = boostSpeed;
